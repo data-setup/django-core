@@ -1,0 +1,52 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "Default",
+      "description": "The default category for all uncategorized products."
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Product 1",
+      "description": "Description of Product 1",
+      "price": 19.99,
+      "stock": 100,
+      "is_active": true,
+      "category": 1,
+      "created_at": "2024-03-29T12:00:00Z",
+      "updated_at": "2024-03-29T12:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Product 2",
+      "description": "Description of Product 2",
+      "price": 29.99,
+      "stock": 50,
+      "is_active": true,
+      "category": 1,
+      "created_at": "2024-03-29T12:00:00Z",
+      "updated_at": "2024-03-29T12:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Product 3",
+      "description": "Description of Product 3",
+      "price": 39.99,
+      "stock": 75,
+      "is_active": true,
+      "category": 1,
+      "created_at": "2024-03-29T12:00:00Z",
+      "updated_at": "2024-03-29T12:00:00Z"
+    }
+  }
+]

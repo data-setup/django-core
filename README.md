@@ -56,9 +56,12 @@ DATABASES = {
 
 And then proceed to build the Docker image, run the container, and execute the standard commands within Docker.
 
-```
 $ docker-compose up -d --build
 $ docker-compose exec web python manage.py migrate
 $ docker-compose exec web python manage.py createsuperuser
-# Load the site at http://127.0.0.1:8000
-```
+
+Load the site at http://127.0.0.1:8000
+
+## **Create products.json**
+
+`python manage.py loaddata products.json`

@@ -1,3 +1,4 @@
+# products/models.py
 from django.db import models
 
 def get_default_category():

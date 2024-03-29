@@ -35,18 +35,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Example Row -->
+                    {% for product in products %}
                     <tr>
-                        <td>1</td>
-                        <td>Product Name</td>
-                        <td>Product Description</td>
-                        <td>$99.99</td>
-                        <td>10</td>
-                        <td>Yes</td>
-                        <td>Category Name</td>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.description }}</td>
+                        <td>${{ product.price }}</td>
+                        <td>{{ product.stock }}</td>
+                        <td>{{ product.is_active|yesno:"Yes,No" }}</td>
+                        <td>{{ product.category }}</td>
                     </tr>
-                    <!-- Repeat rows for each product -->
+                    {% endfor %}
                 </tbody>
+
             </table>
         </div>
 
