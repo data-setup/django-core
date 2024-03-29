@@ -14,7 +14,7 @@
                 <li><a href="{% url 'home' %}" class="nav-link px-2 link-secondary">Home</a></li>
                 <li><a href="{% url 'about' %}" class="nav-link px-2 link-body-emphasis">About</a></li>
                 <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
-                <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
+                <li><a href="{% url 'product_list' %}" class="nav-link px-2 link-body-emphasis">Products</a></li>
             </ul>
             {% if user.is_authenticated %}
 

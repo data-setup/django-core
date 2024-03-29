@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # apps
     "pages",
     "users",
+    "products",
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#middleware
@@ -91,12 +92,8 @@ WSGI_APPLICATION = "backend.wsgi.application"
 # django_project/settings.py
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
-        "HOST": "db",  # set in docker-compose.yml
-        "PORT": 5432,  # default postgres port
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
