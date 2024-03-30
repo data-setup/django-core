@@ -1,6 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+
+<section class="py-5 text-center container-fluid border-bottom shadow-sm">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="display-5 fw-bold text-body-emphasis">Search Product</h1>
+            <p class="lead text-body-secondary">Something short and leading about the collection.</p>
+            <form action="{% url 'product_search' %}" method="get" class="d-flex justify-content-center mb-4 shadow-sm">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
 <div class="container mt-3">
     <h2>Product List</h2>
     <a href="{% url 'product_create' %}" class="btn btn-primary">Add New Product</a>

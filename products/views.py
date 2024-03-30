@@ -2,6 +2,17 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
 from .forms import ProductForm  # Assuming you have a form for Product
+from .models import Product
+
+
+def product_search(request):
+    query = request.GET.get('q')
+    if query:
+        products = Product.objects.filter(name__icontains=query)
+    else:
+        products = Product.objects.all()
+    return render(request, 'products/product_list.html', {'products': products})
+
 
 
 def product_list(request):

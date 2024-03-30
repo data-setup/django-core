@@ -3,18 +3,34 @@
     "model": "products.category",
     "pk": 1,
     "fields": {
-      "name": "Default",
-      "description": "The default category for all uncategorized products."
+      "name": "Electronics",
+      "description": "Gadgets and electronic devices."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "Appliances",
+      "description": "Appliances and tools for home."
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "Books",
+      "description": "Educational and leisure books."
     }
   },
   {
     "model": "products.product",
     "pk": 1,
     "fields": {
-      "name": "Product 1",
-      "description": "Description of Product 1",
-      "price": 19.99,
-      "stock": 100,
+      "name": "iPhone 12",
+      "description": "Latest Apple smartphone with A14 Bionic chip.",
+      "price": 999.99,
+      "stock": 50,
       "is_active": true,
       "category": 1,
       "created_at": "2024-03-29T12:00:00Z",
@@ -25,10 +41,10 @@
     "model": "products.product",
     "pk": 2,
     "fields": {
-      "name": "Product 2",
-      "description": "Description of Product 2",
-      "price": 29.99,
-      "stock": 50,
+      "name": "Samsung Smart TV",
+      "description": "4K UHD Smart TV with HDR.",
+      "price": 1299.99,
+      "stock": 30,
       "is_active": true,
       "category": 1,
       "created_at": "2024-03-29T12:00:00Z",
@@ -39,12 +55,54 @@
     "model": "products.product",
     "pk": 3,
     "fields": {
-      "name": "Product 3",
-      "description": "Description of Product 3",
-      "price": 39.99,
-      "stock": 75,
+      "name": "Vacuum Cleaner",
+      "description": "Powerful suction for deep cleaning.",
+      "price": 599.99,
+      "stock": 40,
       "is_active": true,
-      "category": 1,
+      "category": 2,
+      "created_at": "2024-03-29T12:00:00Z",
+      "updated_at": "2024-03-29T12:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "George Orwell",
+      "description": "Dystopian novel that is an essential read.",
+      "price": 19.99,
+      "stock": 100,
+      "is_active": true,
+      "category": 3,
+      "created_at": "2024-03-29T12:00:00Z",
+      "updated_at": "2024-03-29T12:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "KitchenAid Mixer",
+      "description": "Versatile stand mixer for all your baking needs.",
+      "price": 499.99,
+      "stock": 25,
+      "is_active": true,
+      "category": 2,
+      "created_at": "2024-03-29T12:00:00Z",
+      "updated_at": "2024-03-29T12:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Yuval Noah Harari",
+      "description": "A brief history of humankind.",
+      "price": 24.99,
+      "stock": 85,
+      "is_active": true,
+      "category": 3,
       "created_at": "2024-03-29T12:00:00Z",
       "updated_at": "2024-03-29T12:00:00Z"
     }
