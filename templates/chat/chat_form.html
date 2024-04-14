@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}ChatGpt{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header">
+                    ChatGpt
+                </div>
+                <div class="card-body" id="chatbox">
+                    <div class="chat-message">
+                        <div class="chat-message-content">
+                            <p>Hi! I'm ChatGpt. How can I help you today?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="user-input" placeholder="Type a message...">
+                        <button class="btn btn-primary" id="send-button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

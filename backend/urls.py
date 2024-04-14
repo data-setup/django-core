@@ -11,4 +11,5 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("", include("pages.urls")),
     path('products/', include('products.urls')),  # Include the products app URLs
+    path('chat/', include('chat.urls')),  # Include the chat app URLs
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

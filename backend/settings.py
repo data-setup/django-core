@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "pages",
     "users",
     "products",
+    "chat",
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#middleware
@@ -86,6 +87,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "backend.wsgi.application"
+
+AUTH_USER_MODEL = "users.CustomUser"
 
 
 # Database
@@ -164,8 +167,6 @@ STORAGES = {
 }
 
 
-# https://docs.djangoproject.com/en/dev/topics/auth/customizing/#substituting-a-custom-user-model
-AUTH_USER_MODEL = "users.CustomUser"
 
 
 SITE_ID = 1
